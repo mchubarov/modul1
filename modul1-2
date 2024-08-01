@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Вторая страница</title>
+  </head>
+  <body>
+    <div>
+      <h2>Навигация</h2>
+      <a href="index.html">Главная</a>
+      <a href="#html-section">HTML</a>
+      <a href="#css-section">CSS</a>
+      <a href="#javascript-section">JavaScript</a>
+    </div>
+
+    <hr />
+
+    <div id="html-section">
+      <h3>HTML</h3>
+      <ul>
+        <li>Разметка страниц</li>
+        <li>Теги и атрибуты</li>
+        <li>Структура документов</li>
+        <li>Работа с медиа</li>
+        <li>Формы и ввод данных</li>
+      </ul>
+    </div>
+
+    <hr />
+
+    <div id="css-section">
+      <h3>CSS</h3>
+      <ul>
+        <li>Стилизация элементов</li>
+        <li>Позиционирование</li>
+        <li>Анимации</li>
+        <li>Медиа-запросы</li>
+        <li>Flexbox и Grid</li>
+      </ul>
+    </div>
+
+    <hr />
+
+    <div id="javascript-section">
+      <h3>JavaScript</h3>
+      <ul>
+        <li>Основы синтаксиса</li>
+        <li>Работа с функциями</li>
+        <li>Объектно-ориентированное программирование</li>
+        <li>События и обработчики</li>
+        <li>Модули и API</li>
+      </ul>
+    </div>
+
+    <hr />
+
+    <div>
+      <a href="index.html">Назад на главную</a>
+    </div>
+  </body>
+</html>
