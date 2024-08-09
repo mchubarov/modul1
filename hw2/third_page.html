@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Третья страница</title>
+</head>
+<body>
+  <header>
+      <h1>Frontend разработка</h1>
+			<nav>
+				<ul>
+					<li><a href="/index.html#introduction">Введение</a></li>
+					<li><a href="/index.html#tools">Инструменты</a></li>
+					<li><a href="/index.html#languages">Языки</a></li>
+					<li><a href="./second_page.html">Перейти на 2ю страницу</a></li>
+					<li><a href="./third_page.html">Оставить комментарий</a></li>
+				</ul>
+			</nav>
+		</header>
+    <main>
+      <form action="">
+        <h2>Форма для добавления комментария</h2>
+        <label
+          >Имя пользователя
+          <input type="text" placeholder="Введите имя" name="user_name" />
+        </label>
+        <br />
+        <br>
+        <label>
+          Фамилия пользователя
+          <input type="text" placeholder="Введите фамилию" name="user_surname" />
+        </label>
+        <br />
+        <br>
+        <label>
+          Электронная почта
+          <input type="email" placeholder="Введите почту" name="user_email" />
+        </label>
+        <br />
+        <br>
+        <label>
+          Дата рождения
+          <input type="date" placeholder="Введите дату рождения" name="user_date" />
+        </label>
+        <br />
+        <br>
+        <label>
+          Кол-во лет в сфере frontend-разработки
+          <input type="number" placeholder="Введите стаж" name="user_year" />
+        </label>
+        <br />
+        <br>
+        <label for="comment">Напиши комментарий</label>
+        <br />
+        <textarea id="comment" cols="40" rows="5" name="comment"></textarea>
+        <br />
+        <br />
+        <input type="submit" />
+        <br />
+        <br />
+      </form>
+      
+    </main>
+  <footer>
+      <nav>
+        <a href="index.html">Главная страница</a>
+				<a href="/second_page.html">Вторая страница</a>
+				<a href="/third_page.html">Третья страница</a>
+      </nav>
+      <br>
+      <p>Контактная информация</p>
+      <address>
+        Телефон:
+        <a href="tel:+7 905 098 77 65">+7 905 098 77 65</a>
+      </address>
+    </footer>
+</body>
+</html>
