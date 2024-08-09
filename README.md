@@ -1,3 +1,3 @@
-Домашнее задание к Модулю № 1
+Домашнее задание к Модулю № 2
 
-https://mchubarov.github.io/urban/hw/index.html
+https://mchubarov.github.io/urban/hw2/index.html
