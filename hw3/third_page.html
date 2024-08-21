@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Третья страница</title>
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+	<body>
+		<header>
+			<div class="front">
+				<h1>Frontend разработка</h1>
+				<nav>
+					<button onclick="location.href='index.html#introduction'">
+						<svg
+							width="16"
+							height="16"
+							viewBox="0 0 16 16"
+							fill="none"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<path d="M0 3V1H12V3H0Z" fill="black" />
+							<path d="M0 7V5H12V7H0Z" fill="black" />
+							<path d="M0 9V11H8V9H0Z" fill="black" />
+							<path
+								d="M13 9C13.825 9 14.5 9.675 14.5 10.5C14.5 11.325 13.825 12 13 12C12.175 12 11.5 11.325 11.5 10.5C11.5 9.675 12.175 9 13 9Z"
+								fill="black"
+							/>
+							<path
+								d="M10 15V14.25C10 13.425 11.35 12.75 13 12.75C14.65 12.75 16 13.425 16 14.25V15H10Z"
+								fill="black"
+							/>
+						</svg>
+						Введение
+					</button>
+					<button onclick="location.href='index.html#tools'">
+						<svg
+							width="16"
+							height="16"
+							viewBox="0 0 16 16"
+							fill="none"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<path d="M0 3V1H12V3H0Z" fill="black" />
+							<path d="M0 7V5H12V7H0Z" fill="black" />
+							<path d="M0 11V9H8V11H0Z" fill="black" />
+							<path
+								d="M14.3503 7.99994C14.2611 7.99994 14.0828 8.08855 13.9936 8.17715L13.1019 9.06323L14.9745 10.924L15.8662 10.0379C16.0446 9.8607 16.0446 9.50627 15.8662 9.32905L14.707 8.17715C14.6178 8.08855 14.5287 7.99994 14.3503 7.99994Z"
+								fill="black"
+							/>
+							<path
+								d="M12.6561 9.59488L9 13.2278V14.9999H10.8726L14.5287 11.367L12.6561 9.59488Z"
+								fill="black"
+							/>
+						</svg>
+						Инструменты
+					</button>
+					<button onclick="location.href='index.html#languages'">
+						<svg
+							width="16"
+							height="16"
+							viewBox="0 0 16 16"
+							fill="none"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<path
+								opacity="0.25"
+								fill-rule="evenodd"
+								clip-rule="evenodd"
+								d="M0 15V13H16V15H0ZM0 9H16V11H0V9ZM0 5H16V7H0V5ZM0 1H16V3H0V1Z"
+								fill="black"
+							/>
+							<path
+								fill-rule="evenodd"
+								clip-rule="evenodd"
+								d="M12.5 13H10L8 7.5L6 13H3.5L2 3H4L5 10L7.5 3H8.5L11 10L12 3H14L12.5 13Z"
+								fill="black"
+							/>
+						</svg>
+						Языки
+					</button>
+					<button onclick="location.href='index.html'">
+						<svg
+							width="16"
+							height="16"
+							viewBox="0 0 16 16"
+							fill="none"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<path d="M7 15L8.5 13.5L3 8L8.5 2.5L7 1L0 8L7 15Z" fill="black" />
+							<path
+								d="M13.5 15L15 13.5L9.5 8L15 2.5L13.5 1L6.5 8L13.5 15Z"
+								fill="black"
+							/>
+						</svg>
+						Первая страница
+					</button>
+					<button onclick="location.href='second_page.html'">
+						<svg
+							width="16"
+							height="16"
+							viewBox="0 0 16 16"
+							fill="none"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<path
+								fill-rule="evenodd"
+								clip-rule="evenodd"
+								d="M12 13.5L10.5 15L3.5 8L10.5 1L12 2.5L6.5 8L12 13.5Z"
+								fill="black"
+							/>
+						</svg>
+						вторая страница
+					</button>
+				</nav>
+			</div>
+		</header>
+		<main>
+			<form action="" method="get">
+				<h2>Форма для добавления комментария</h2>
+				<label
+					>Имя пользователя
+					<input type="text" placeholder="Введите имя" name="user_name" />
+				</label>
+				<br />
+				<br />
+				<label>
+					Фамилия пользователя
+					<input
+						type="text"
+						placeholder="Введите фамилию"
+						name="user_surname"
+					/>
+				</label>
+				<br />
+				<br />
+				<label>
+					Электронная почта
+					<input type="email" placeholder="Введите почту" name="user_email" />
+				</label>
+				<br />
+				<br />
+				<label>
+					Дата рождения
+					<input type="date" name="user_date" />
+				</label>
+				<br />
+				<br />
+				<label>
+					Кол-во лет в сфере frontend-разработки
+					<input type="number" placeholder="Введите стаж" name="user_year" />
+				</label>
+				<br />
+				<br />
+				<label for="comment">Напиши комментарий</label>
+				<br />
+				<textarea id="comment" cols="40" rows="5" name="comment"></textarea>
+				<br />
+				<br />
+				<input type="submit" />
+				<br />
+				<br />
+			</form>
+		</main>
+		<footer>
+			<div>
+				<nav>
+					<button onclick="location.href='index.html'">
+						<svg
+							width="16"
+							height="16"
+							viewBox="0 0 16 16"
+							fill="none"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<path
+								d="M5.9 14L1 9.20003L3.2 7.00003L5.9 9.60003L13.8 2.00003L16 4.20003L5.9 14Z"
+								fill="black"
+							/>
+						</svg>
+						Главная страница
+					</button>
+					<button onclick="location.href='second_page.html'">
+						<svg
+							width="16"
+							height="16"
+							viewBox="0 0 16 16"
+							fill="none"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<path
+								fill-rule="evenodd"
+								clip-rule="evenodd"
+								d="M4 13.5L5.5 15L12.5 8L5.5 1L4 2.5L9.5 8L4 13.5Z"
+								fill="black"
+							/>
+						</svg>
+						Вторая страница
+					</button>
+					<button onclick="location.href='third_page.html'">
+						<svg
+							width="16"
+							height="16"
+							viewBox="0 0 16 16"
+							fill="none"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<path
+								d="M8 15L6.5 13.5L12 8L6.5 2.5L8 1L15 8L8 15Z"
+								fill="black"
+							/>
+							<path
+								d="M1.5 15L0 13.5L5.5 8L0 2.5L1.5 1L8.5 8L1.5 15Z"
+								fill="black"
+							/>
+						</svg>
+						Третья страница
+					</button>
+				</nav>
+				<p>Контактная информация</p>
+				<address>
+					Телефон:
+					<a href="tel:+79050987765">+7 905 098 77 65</a>
+				</address>
+			</div>
+		</footer>
+	</body>
+</html>
