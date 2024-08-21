@@ -14,6 +14,10 @@ img 	{
 	padding: 20px;
 	}
 
+li 	{
+	padding: 5px;
+	}
+
 .front {
 	display: grid;
 	width: 100%;
