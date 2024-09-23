@@ -44,6 +44,35 @@
 				<button id="refresh-page">Обновление страницы</button>
 				<button id="clear-books">Удалить все книги</button>
 			</div>
+
+			<!-- Добавляем модальное окно для редактирования -->
+			<div id="edit-modal" class="modal">
+				<div class="modal-content">
+					<span class="close-button">&times;</span>
+					<h2>Редактирование книги</h2>
+					<form id="edit-form">
+						<input
+							type="text"
+							id="edit-title"
+							placeholder="Название"
+							required
+						/>
+						<input type="text" id="edit-author" placeholder="Автор" required />
+						<input
+							type="number"
+							id="edit-year"
+							placeholder="Год издания"
+							required
+						/>
+						<input type="text" id="edit-genre" placeholder="Жанр" required />
+						<select id="edit-status" required>
+							<option value="Не прочитано">Не прочитано</option>
+							<option value="Прочитано">Прочитано</option>
+						</select>
+						<button type="submit">Сохранить</button>
+					</form>
+				</div>
+			</div>
 		</div>
 		<script src="script.js"></script>
 	</body>
