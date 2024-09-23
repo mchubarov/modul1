@@ -1,4 +1,3 @@
-
 const bookForm = document.getElementById('book-form');
 const bookList = document.getElementById('books');
 const totalBooks = document.getElementById('total-books');
@@ -9,7 +8,13 @@ const filterStatusSelect = document.getElementById('filter-status');
 
 let books = JSON.parse(localStorage.getItem('books')) || [];
 
-// Представление книг
+// Переменные для редактирования
+let editIndex = null;
+const editModal = document.getElementById('edit-modal');
+const editForm = document.getElementById('edit-form');
+const closeButton = document.querySelector('.close-button');
+
+// Функция для отображения книг
 function renderBooks() {
 	bookList.innerHTML = '';
 	const filteredBooks = books.filter(book => {
@@ -62,17 +67,46 @@ function deleteBook(index) {
 
 // Редактирование книги
 function editBook(index) {
+	editIndex = index;
 	const book = books[index];
-	document.getElementById('title').value = book.title;
-	document.getElementById('author').value = book.author;
-	document.getElementById('year').value = book.year;
-	document.getElementById('genre').value = book.genre;
-	document.getElementById('status').value = book.status;
+	document.getElementById('edit-title').value = book.title;
+	document.getElementById('edit-author').value = book.author;
+	document.getElementById('edit-year').value = book.year;
+	document.getElementById('edit-genre').value = book.genre;
+	document.getElementById('edit-status').value = book.status;
+	// Показываем модальное окно
+	editModal.style.display = 'block';
+}
 
-	books.splice(index, 1);
+// Закрытие модального окна при клике на крестик
+closeButton.addEventListener('click', function () {
+	editModal.style.display = 'none';
+});
+
+// Закрытие модального окна при клике вне его
+window.addEventListener('click', function (event) {
+	if (event.target == editModal) {
+		editModal.style.display = 'none';
+	}
+});
+
+// Сохранение отредактированной книги
+editForm.addEventListener('submit', function (event) {
+	event.preventDefault();
+
+	const title = document.getElementById('edit-title').value;
+	const author = document.getElementById('edit-author').value;
+	const year = document.getElementById('edit-year').value;
+	const genre = document.getElementById('edit-genre').value;
+	const status = document.getElementById('edit-status').value;
+
+	const updatedBook = { title, author, year, genre, status };
+	books[editIndex] = updatedBook;
 	localStorage.setItem('books', JSON.stringify(books));
 	renderBooks();
-}
+	editForm.reset();
+	editModal.style.display = 'none';
+});
 
 // Удаление всех книг
 clearBooksButton.addEventListener('click', function () {
@@ -81,14 +115,14 @@ clearBooksButton.addEventListener('click', function () {
 	renderBooks();
 });
 
-// Обработчик для кнопки обновления страницы
+// Обновление страницы
 refreshPageButton.addEventListener('click', function () {
-	location.reload(); // Перезагружает страницу
+	location.reload();
 });
 
-// Фильтр книг
+// Фильтрация книг
 filterGenreInput.addEventListener('input', renderBooks);
 filterStatusSelect.addEventListener('change', renderBooks);
 
-// Запуск представления
+// Инициализация отображения книг
 renderBooks();
