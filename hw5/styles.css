@@ -1,97 +1,142 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    padding: 20px;
+	font-family: Arial, sans-serif;
+	background-color: #f4f4f4;
+	padding: 20px;
 }
 
 .container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 20px;
+	background-color: white;
+	border-radius: 8px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-h1, h2 {
-    text-align: center;
-    margin-top: 10px;
+h1,
+h2 {
+	text-align: center;
+	margin-top: 10px;
 }
 
-form, #filter-section, #book-list {
-    margin-bottom: 20px;
+form,
+#filter-section,
+#book-list {
+	margin-bottom: 20px;
 }
 
-input, select, button {
-    display: block;
-    width: 100%;
-    margin-bottom: 10px;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
+input,
+select,
+button {
+	display: block;
+	width: 100%;
+	margin-bottom: 10px;
+	padding: 10px;
+	border: 1px solid #ddd;
+	border-radius: 4px;
 }
 
 button {
-    background-color: #28a745;
-    color: white;
-    cursor: pointer;
-    border: none;
+	background-color: #28a745;
+	color: white;
+	cursor: pointer;
+	border: none;
 }
 
 button:hover {
-    background-color: #218838;
+	background-color: #218838;
 }
 
 ul {
-    list-style-type: none;
+	list-style-type: none;
 }
 
 li {
-    padding: 10px;
-    border-bottom: 1px solid #ddd;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+	padding: 10px;
+	border-bottom: 1px solid #ddd;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
 
-button.edit, button.delete {
-    background-color: #007bff;
-    color: white;
-    border: none;
-    padding: 5px 10px;
-    cursor: pointer;
-    border-radius: 4px;
+button.edit,
+button.delete {
+	background-color: #007bff;
+	color: white;
+	border: none;
+	padding: 5px 10px;
+	cursor: pointer;
+	border-radius: 4px;
 }
 
 button.delete {
-    background-color: #dc3545;
+	background-color: #dc3545;
 }
 
 #stats {
-    text-align: center;
+	text-align: center;
 }
 
 #refresh-page {
-    background-color: #0728ff;
-    border: none;
-    padding: 10px;
-    margin-top: 10px;
-    cursor: pointer;
-    color: white;
-    border-radius: 4px;
+	background-color: #0728ff;
+	border: none;
+	padding: 10px;
+	margin-top: 10px;
+	cursor: pointer;
+	color: white;
+	border-radius: 4px;
 }
 
 #clear-books {
-    background-color: #ff0707;
-    border: none;
-    padding: 10px;
+	background-color: #ff0707;
+	border: none;
+	padding: 10px;
+	cursor: pointer;
+	color: white;
+	border-radius: 4px;
+}
+
+/* Стили для модального окна */
+.modal {
+    display: none; /* Скрыто по умолчанию */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.5); /* Затемнение фона */
+}
+
+.modal-content {
+    background-color: white;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 400px; /* Установили фиксированную ширину */
+    max-width: 90%; /* Максимальная ширина для мобильных устройств */
+    border-radius: 8px;
+    position: relative;
+}
+
+.close-button {
+    color: #aaa;
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    font-size: 28px;
+    font-weight: bold;
     cursor: pointer;
-    color: white;
-    border-radius: 4px;
+}
+
+.close-button:hover,
+.close-button:focus {
+    color: black;
 }
