@@ -1,3 +1,3 @@
-Домашнее задание к Модулю № 5
+Домашнее задание к Модулю № 6
 
 https://mchubarov.github.io/urban/hw5/index.html
