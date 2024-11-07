@@ -1,47 +1,245 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MNTN - A Hiking Guide</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <div class="background">
-        <header>
-            <div class="logo">MNTN</div>
-            <nav>
-                <div class="nav-center">
-                    <a href="#">Equipment</a>
-                    <a href="#">About us</a>
-                    <a href="#">Blog</a>
-                </div>
-                <div class="nav-right">
-                    <a href="#">Account</a>
-                </div>
-            </nav>
-        </header>
-        <div class="content">
-            <p class="subtitle">A Hiking guide</p>
-            <h1>Be Prepared For The<br>Mountains And<br>Beyond!</h1>
-            <p>scroll down ↓</p>
-        </div>
-        <div class="scroll-down">
-            <p>01 — GET STARTED</p>
-            <h2>What level of<br>hiker are you?</h2>
-        </div>
-        <div class="social-links">
-            <a href="#">Follow us</a>
-            <a href="#">Instagram</a>
-            <a href="#">Twitter</a>
-        </div>
-        <div class="page-numbers">
-            <p>Start</p>
-            <p>01</p>
-            <p>02</p>
-            <p>03</p>
-        </div>
-    </div>
-    <script src="script.js"></script>
-</body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="css/style.css" />
+		<title>MNTN</title>
+	</head>
+	<body>
+		<header>
+			<nav class="nav-header">
+				<img src="img/Logo.png" alt="logo" />
+				<div class="nav-header-center">
+					<a href="#" class="header-btn">Equipment</a>
+					<a href="#" class="header-btn">About us</a>
+					<a href="#" class="header-btn">Blog</a>
+				</div>
+				<div>
+					<a href="#" class="account-btn header-btn"
+						><img
+							class="account-btn-icon"
+							src="img/cart.png"
+							alt="account"
+						/>Account</a
+					>
+				</div>
+				<img
+					id="burgerIcon"
+					class="burger-icon"
+					src="img/Menu.png"
+					alt="burger"
+				/>
+				<div id="mobileMenu" class="mobile-menu">
+					<div class="mobile-menu-upper-block">
+						<img src="img/Logo.png" alt="logo" class="filter" />
+						<img id="closeIcon" src="img/Close.png" alt="close" />
+					</div>
+					<div class="mobile-menu-lower-block">
+						<div>
+							<a href="#" class="header-btn-black">Equipment</a>
+							<a href="#" class="header-btn-black">About us</a>
+							<a href="#" class="header-btn-black">Blog</a>
+						</div>
+						<a href="#" class="account-btn header-btn-black"
+							><img
+								class="account-btn-icon filter"
+								src="img/cart.png"
+								alt="account"
+							/>Account</a
+						>
+					</div>
+					<div class="social-links-mobile">
+						<a href="#" class="vertical-text">Follow us</a>
+						<a href="#"><img src="img/instagram.png" alt="Instagram" class="social-icon" /></a>
+						<a href="#"><img src="img/twitter.png" alt="Twitter" class="social-icon" /></a>
+					</div>
+				</div>
+			</nav>
+			<div class="header-content">
+				<div class="rectangle-icon-wrapper">
+					<img
+						src="img/Rectangle 2.1.png"
+						alt="Rectangle"
+						class="rectangle-icon"
+					/>
+					<p>A HIKING GUIDE</p>
+				</div>
+				<h1>Be Prepared For The Mountains And Beyond!</h1>
+				<div class="scroll-down-wrapper">
+					<a href="#">scroll down</a>
+					<img
+						src="img/arrow_downward_24px.png"
+						alt="Downward"
+						class="downward-icon"
+					/>
+				</div>
+			</div>
+			<div class="social-links">
+				<a href="#" class="vertical-text">Follow us</a>
+				<a href="#"
+					><img src="img/instagram.png" alt="Instagram" class="social-icon"
+				/></a>
+				<a href="#"
+					><img src="img/twitter.png" alt="Twitter" class="social-icon"
+				/></a>
+			</div>
+			<div class="slider">
+				<a href="#"
+					><img src="img/Slider.png" alt="Slider" class="slider-icon"
+				/></a>
+			</div>
+		</header>
+		<main>
+			<section class="section-1">
+				<div class="section-1-content">
+					<p class="section-number">01</p>
+					<div class="content-wrapper">
+						<div class="rectangle-icon-wrapper">
+							<img
+								src="img/Rectangle 2.1.png"
+								alt="Rectangle"
+								class="rectangle-icon"
+							/>
+							<p>GET STARTED</p>
+						</div>
+						<div class="content-text">
+							<h2>What level of<br />hiker are you?</h2>
+							<p>
+								Determining what level of hiker you are can be an important
+								tool<br />
+								when planning future hikes. This hiking level guide will help
+								you plan<br />
+								hikes according to different hike ratings set by various
+								websites like<br />
+								All Trails and Modern Hiker. What type of hiker are you –
+								novice,<br />
+								moderate, advanced moderate, expert, or expert backpacker?
+							</p>
+						</div>
+						<div class="read-more-wrapper">
+							<a href="#">read more</a>
+							<img
+								src="img/arrow_readmore_24px.png"
+								alt="Readmore"
+								class="readmore-icon"
+							/>
+						</div>
+					</div>
+					<img src="img/01.png" alt="01" class="number-icon1" />
+				</div>
+			</section>
+			<section class="section-2">
+				<div class="section-2-content">
+					<p class="section-number2">02</p>
+					<div class="content-wrapper2">
+						<div class="rectangle-icon-wrapper">
+							<img
+								src="img/Rectangle 2.1.png"
+								alt="Rectangle"
+								class="rectangle-icon"
+							/>
+							<p>HIKING ESSENTIALS</p>
+						</div>
+						<div class="content-text2">
+							<h2>Picking the right<br />Hiking Gear!</h2>
+							<p>
+								The nice thing about beginning hiking is that you don’t really
+								need<br />
+								any special gear, you can probably get away with things you<br />
+								already have.<br />
+								Let’s start with clothing. A typical mistake hiking beginners
+								make is<br />
+								wearing jeans and regular clothes, which will get heavy and
+								chafe<br />
+								wif they get sweaty or wet.
+							</p>
+						</div>
+						<div class="read-more-wrapper">
+							<a href="#">read more</a>
+							<img
+								src="img/arrow_readmore_24px.png"
+								alt="Readmore"
+								class="readmore-icon"
+							/>
+						</div>
+					</div>
+					<img src="img/02.png" alt="02" class="number-icon2" />
+				</div>
+			</section>
+			<section class="section-3">
+				<div class="section-3-content">
+					<p class="section-number3">03</p>
+					<div class="content-wrapper3">
+						<div class="rectangle-icon-wrapper">
+							<img
+								src="img/Rectangle 2.1.png"
+								alt="Rectangle"
+								class="rectangle-icon"
+							/>
+							<p>WHERE YOU GO IS THE KEY</p>
+						</div>
+						<div class="content-text3">
+							<h2>Understand Your<br />Map & Timing</h2>
+							<p>
+								To start, print out the hiking guide and map. If it’s raining,
+								throw<br />
+								them in a Zip-Lock bag. Read over the guide, study the map,
+								and<br />
+								have a good idea of what to expect. I like to know what my
+								next<br />
+								landmark is as I hike. For example, I’ll read the guide and know
+								that<br />
+								say, in a mile, I make a right turn at the junction..
+							</p>
+						</div>
+						<div class="read-more-wrapper">
+							<a href="#">read more</a>
+							<img
+								src="img/arrow_readmore_24px.png"
+								alt="Readmore"
+								class="readmore-icon"
+							/>
+						</div>
+					</div>
+					<img src="img/03.png" alt="03" class="number-icon3" />
+				</div>
+			</section>
+		</main>
+		<footer>
+			<div class="footer-content">
+				<div class="footer-logo">
+					<img src="img/Logo.png" alt="MNTN logo" />
+					<p>
+						Get out there & discover your next<br />
+						slope, mountain & destination!
+					</p>
+				</div>
+				<div class="footer-links">
+					<div class="footer-column">
+						<h3>More on The Blog</h3>
+						<ul>
+							<li><a href="#">About MNTN</a></li>
+							<li><a href="#">Contributors & Writers</a></li>
+							<li><a href="#">Write For Us</a></li>
+							<li><a href="#">Contact Us</a></li>
+							<li><a href="#">Privacy Policy</a></li>
+						</ul>
+					</div>
+					<div class="footer-column">
+						<h3>More on MNTN</h3>
+						<ul>
+							<li><a href="#">The Team</a></li>
+							<li><a href="#">Jobs</a></li>
+							<li><a href="#">Press</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="footer-bottom">
+				<p>Copyright 2019 MNTN, Inc. Terms & Privacy</p>
+			</div>
+		</footer>
+		<script src="scripts/main.js"></script>
+	</body>
 </html>
