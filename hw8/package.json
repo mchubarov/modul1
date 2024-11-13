@@ -1,0 +1,30 @@
+{
+  "name": "urban",
+  "version": "1.0.0",
+  "description": "module_8",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "parcel index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mchubarov/urban.git"
+  },
+  "keywords": [
+    "module_8"
+  ],
+  "author": "mchubarov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mchubarov/urban/issues"
+  },
+  "homepage": "https://github.com/mchubarov/urban#readme",
+  "dependencies": {
+    "express": "^4.21.1",
+    "pg": "^8.13.1"
+  },
+  "devDependencies": {
+    "parcel": "^2.13.0"
+  }
+}
