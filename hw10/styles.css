@@ -113,27 +113,27 @@
 	background-color: #0056b3;
 }
 
-/* Modal styles */
+/* Стили для модального окна */
 .modal {
-	display: none; /* Hidden by default */
-	position: fixed; /* Stay in place */
-	z-index: 1; /* Sit on top */
+	display: none; /* По умолчанию скрыто */
+	position: fixed; /* Оставаться на месте */
+	z-index: 1; /* Находится сверху */
 	left: 0;
 	top: 0;
-	width: 100%; /* Full width */
-	height: 100%; /* Full height */
-	overflow: auto; /* Enable scroll if needed */
-	background-color: rgba(0, 0, 0, 0.5); /* Darker background */
+	width: 100%; /* Полная ширина */
+	height: 100%; /* Полная высота */
+	overflow: auto; /* Включить прокрутку при необходимости */
+	background-color: rgba(0, 0, 0, 0.5); /* Темный фон */
 }
 
 .modal-content {
-	background-color: #fff; /* White background for the modal */
-	margin: 10% auto; /* Centered */
+	background-color: #fff; /* Белый фон для модального окна */
+	margin: 10% auto; /* Центрирование */
 	padding: 20px;
-	border-radius: 10px; /* Rounded corners */
-	width: 90%; /* Responsive width */
-	max-width: 500px; /* Max width for larger screens */
-	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+	border-radius: 10px; /* Округленные углы */
+	width: 90%; /* Адаптивная ширина */
+	max-width: 500px; /* Максимальная ширина для больших экранов */
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Тень для глубины */
 }
 
 .close {
@@ -145,12 +145,12 @@
 
 .close:hover,
 .close:focus {
-	color: #000; /* Darker color on hover */
+	color: #000; /* Темный цвет при наведении */
 	text-decoration: none;
 	cursor: pointer;
 }
 
-/* Adjust form styles */
+/* Настройка стилей формы */
 #addProductForm {
 	display: flex;
 	flex-direction: column;
@@ -160,45 +160,45 @@
 #addProductForm select,
 #addProductForm textarea,
 #addProductForm button {
-	margin: 10px 0; /* Increased margin for spacing */
-	padding: 12px; /* Increased padding for comfort */
-	font-size: 1rem; /* Consistent font size */
-	border: 1px solid #ccc; /* Light border */
-	border-radius: 5px; /* Rounded corners */
-	width: calc(100% - 24px); /* Adjust width to fit within the modal */
+	margin: 10px 0; /* Увеличенный отступ для пространства */
+	padding: 12px; /* Увеличенный отступ для удобства */
+	font-size: 1rem; /* Консистентный размер шрифта */
+	border: 1px solid #ccc; /* Легкий край */
+	border-radius: 5px; /* Округленные углы */
+	width: calc(100% - 24px); /* Настройка ширины для соответствия в модальном окне */
 }
 
 #addProductForm button {
-	background-color: #4caf50; /* Green background */
-	color: #fff; /* White text */
-	border: none; /* No border */
-	cursor: pointer; /* Pointer cursor */
-	transition: background-color 0.3s; /* Smooth transition */
+	background-color: #4caf50; /* Зеленый фон */
+	color: #fff; /* Белый текст */
+	border: none; /* Без края */
+	cursor: pointer; /* Указатель курсора */
+	transition: background-color 0.3s; /* Плавный переход */
 }
 
 #addProductForm button:hover {
-	background-color: #45a049; /* Darker green on hover */
+	background-color: #45a049; /* Темнее зеленый при наведении */
 }
 
-/* Checkbox style */
+/* Стили для флажка */
 #addProductForm input[type='checkbox'] {
-	margin: 10px 0; /* Spacing for checkbox */
+	margin: 10px 0; /* Пространство для флажка */
 }
 
 /* Стили для кнопки "Добавить товар" */
 #openModalBtn {
-	background-color: #4caf50; /* Green background */
-	color: #fff; /* White text */
-	border: none; /* No border */
-	border-radius: 5px; /* Rounded corners */
-	padding: 12px 20px; /* Increased padding for size */
-	font-size: 1.1rem; /* Larger font size */
-	cursor: pointer; /* Pointer cursor */
-	transition: background-color 0.3s, transform 0.2s; /* Smooth transition */
-	margin-top: 10px; /* Spacing above the button */
+	background-color: #4caf50; /* Зеленый фон */
+	color: #fff; /* Белый текст */
+	border: none; /* Без края */
+	border-radius: 5px; /* Округленные углы */
+	padding: 12px 20px; /* Увеличенный отступ для размера */
+	font-size: 1.1rem; /* Больший размер шрифта */
+	cursor: pointer; /* Указатель курсора */
+	transition: background-color 0.3s, transform 0.2s; /* Плавный переход */
+	margin-top: 10px; /* Пространство выше кнопки */
 }
 
 #openModalBtn:hover {
-	background-color: #45a049; /* Darker green on hover */
-	transform: scale(1.05); /* Slightly enlarge on hover */
+	background-color: #45a049; /* Темнее зеленый при наведении */
+	transform: scale(1.05); /* Немного увеличить при наведении */
 }

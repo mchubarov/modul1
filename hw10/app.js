@@ -14,17 +14,17 @@ let categories = [];
 let displayedProducts = 0;
 const productsPerPage = 6;
 
-// Open modal
+// Открыть модальное окно
 openModalBtn.addEventListener('click', () => {
 	productModal.style.display = 'block';
 });
 
-// Close modal
+// Закрыть модальное окно
 closeModalBtn.addEventListener('click', () => {
 	productModal.style.display = 'none';
 });
 
-// Close modal when clicking outside of it
+// Закрывать модальное окно при нажатии вне его
 window.addEventListener('click', event => {
 	if (event.target === productModal) {
 		productModal.style.display = 'none';
