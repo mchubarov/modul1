@@ -33,9 +33,7 @@ window.addEventListener('click', event => {
 
 /** Функции */
 
-/**
- * Отображение товаров на странице.
- */
+/** Отображение товаров на странице. */
 const displayProducts = productArray => {
 	productArray.forEach(product => {
 		const productCard = document.createElement('div');
@@ -51,9 +49,7 @@ const displayProducts = productArray => {
 	});
 };
 
-/**
- * Загрузка товаров из API.
- */
+/** Загрузка товаров из API. */
 const loadProducts = async () => {
 	try {
 		const response = await fetch('https://fakestoreapi.com/products');
@@ -66,9 +62,7 @@ const loadProducts = async () => {
 	}
 };
 
-/**
- * Загрузка категорий из API и добавление их в фильтр.
- */
+/** Загрузка категорий из API и добавление их в фильтр. */
 const loadCategories = async () => {
 	try {
 		const response = await fetch(
@@ -90,9 +84,7 @@ const loadCategories = async () => {
 	}
 };
 
-/**
- * Фильтрация товаров по выбранной категории.
- */
+/** * Фильтрация товаров по выбранной категории. */
 categoryFilter.addEventListener('change', e => {
 	const selectedCategory = e.target.value;
 	productList.innerHTML = '';
@@ -102,9 +94,7 @@ categoryFilter.addEventListener('change', e => {
 	displayProducts(filteredProducts.slice(0, displayedProducts));
 });
 
-/**
- * Загрузка дополнительных товаров при нажатии кнопки "Загрузить ещё".
- */
+/** Загрузка дополнительных товаров при нажатии кнопки "Загрузить ещё". */
 loadMoreBtn.addEventListener('click', () => {
 	const selectedCategory = categoryFilter.value;
 	const filteredProducts = selectedCategory
@@ -118,9 +108,7 @@ loadMoreBtn.addEventListener('click', () => {
 	displayedProducts += nextProducts.length;
 });
 
-/**
- * Добавление нового товара через форму.
- */
+/** * Добавление нового товара через форму. */
 addProductForm.addEventListener('submit', async e => {
 	e.preventDefault();
 
@@ -160,9 +148,7 @@ addProductForm.addEventListener('submit', async e => {
 	}
 });
 
-/**
- * Удаление выбранного товара.
- */
+/** Удаление выбранного товара. */
 productList.addEventListener('click', async e => {
 	if (!e.target.classList.contains('delete-btn')) return;
 
